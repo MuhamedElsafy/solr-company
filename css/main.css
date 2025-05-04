@@ -1,0 +1,1545 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #0b9586;
+}
+.logo img {
+  opacity: 0.4;
+  width: 100%;
+}
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 18px;
+  padding: 7px 15px;
+  letter-spacing: 0.94px;
+}
+.nav-links ul li a:hover,
+.nav-links ul li a:active {
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+.phone-num {
+  text-align: right;
+  color: white;
+}
+.phone-num label {
+  font-family: Inter;
+  font-weight: 300;
+  font-size: 16px;
+}
+.phone-num p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.94px;
+}
+/*  */
+.hero-section {
+  background-image: url("../images/solar-panels-meadow 1.png");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-text {
+  width: 650px;
+  position: absolute;
+  top: 28%;
+  left: 10%;
+}
+.hero-text h1 {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 1);
+}
+.hero-text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+.btn-box .btn {
+  padding: 12px 37px;
+  border-radius: 20px;
+  border: none;
+}
+.btn-box .btn-one {
+  background-color: rgba(60, 171, 144, 1);
+  margin-right: 25px;
+  color: white;
+}
+.btn-box .btn-two {
+  background-color: rgba(255, 187, 28, 1);
+  color: black;
+}
+.hero-num {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 40%;
+  color: white;
+  padding-top: 40px;
+}
+.one {
+  position: relative;
+}
+.hero-num .one::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 42px;
+  width: 75px;
+  height: 3px;
+  background: white;
+}
+.two {
+  position: relative;
+}
+.hero-num .two::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 42px;
+  width: 106px;
+  height: 3px;
+  background: rgba(87, 87, 87, 1);
+}
+
+/* about section */
+.about-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-text {
+  width: 40%;
+}
+.about-text h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 40px;
+  color: rgba(16, 24, 40, 1);
+}
+.about-text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(71, 84, 103, 1);
+  padding: 25px 0;
+}
+.about-text .custom-ol {
+  list-style: none;
+  counter-reset: list-counter;
+  padding-left: 0;
+}
+.custom-ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(16, 24, 40, 1);
+}
+.custom-ol li::before {
+  content: counter(list-counter, decimal-leading-zero) " /";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgba(132, 189, 58, 1);
+  font-weight: 700;
+  font-size: 17px;
+}
+.about-img {
+  width: 35%;
+  position: relative;
+}
+
+.about-img .child-photo {
+  position: absolute;
+  left: -50px;
+  bottom: 35px;
+}
+/* section 3 */
+
+.tree-box {
+  background-image: url("../images/photo.png");
+  background-size: cover;
+  background-position: center center;
+  height: 78vh;
+  margin: 30px 0;
+  position: relative;
+}
+.tree-text {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  width: 48%;
+}
+.tree-text h3 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+}
+.tree-text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 1);
+  padding: 23px 0;
+}
+.tree-btn {
+  padding: 12px 37px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(255, 187, 28, 1);
+  color: black;
+}
+/* solar kit section */
+.solar-text {
+  margin-top: 50px;
+  text-align: center;
+}
+.solar-text h3 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  color: rgba(16, 24, 40, 1);
+}
+.solar-text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(71, 84, 103, 1);
+  padding: 23px 0;
+}
+.solar-grid {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.solar-card {
+  margin: 20px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  padding-bottom: 20px;
+}
+.solar-card img {
+  width: 100%;
+}
+.solar-card h5 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px;
+}
+.solar-card p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(71, 84, 103, 1);
+  padding: 15px;
+}
+.solar-card .solar-link {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(60, 171, 144, 1);
+  text-decoration: none;
+  padding: 15px;
+}
+.solar-card .solar-link:hover {
+  color: rgba(13, 44, 110, 0.7);
+}
+.solar-card i {
+  color: rgba(60, 171, 144, 1);
+}
+/* Repairs */
+
+#Repairs {
+  margin-top: 50px;
+}
+.repair-box {
+  height: 505px;
+  background-image: url("../images/8116 1.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.repair-text {
+  text-align: center;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.57);
+  padding: 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.repair-text h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -2%;
+  color: white;
+}
+.repair-text p {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  padding: 23px 0;
+}
+
+/* enargy uses */
+.uses-box {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  background: rgba(255, 187, 28, 0.05);
+}
+.uses-text {
+  width: 30%;
+}
+.icon-light {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(60, 171, 144, 1);
+  box-shadow: 0 0 0 8px #dcfce7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.uses-text h4 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  color: rgba(16, 24, 40, 1);
+  padding: 23px 0;
+}
+.uses-text p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: rgba(71, 84, 103, 1);
+}
+.uses-ex {
+  width: 60%;
+}
+.duo-use {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.duo-use .f-use {
+  background: rgba(60, 171, 144, 0.05);
+  border: 1px solid rgba(60, 171, 144, 1);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px;
+  width: 45%;
+}
+.f-use .img-use {
+  width: 90%;
+  margin: auto;
+  border-radius: 15px;
+}
+.img-use img {
+  width: 100%;
+  border-radius: 15px;
+}
+.f-use h5 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 15px 0;
+  color: rgba(16, 24, 40, 1);
+}
+.f-use p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(71, 84, 103, 1);
+  padding: 15px 0;
+}
+.f-use .uses-link {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(60, 171, 144, 1);
+  text-decoration: none;
+  padding: 15px 0;
+}
+.f-use .uses-link:hover {
+  color: rgba(13, 44, 110, 0.7);
+}
+.f-use i {
+  color: rgba(60, 171, 144, 1);
+}
+
+/*  values section */
+
+.title h2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  text-align: center;
+  color: rgba(16, 24, 40, 1);
+  margin: 30px;
+}
+.title p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(71, 84, 103, 1);
+  margin-bottom: 30px;
+}
+.valueItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+}
+.valueitem {
+  width: 30%;
+  height: 420px;
+  margin: 15px;
+  border-radius: 12px;
+  border-width: 1px;
+  padding: 32px;
+  background: rgba(60, 171, 144, 0.05);
+  border: 1px solid rgba(60, 171, 144, 1);
+}
+
+.valueitem h5 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: rgba(16, 24, 40, 1);
+  padding: 15px 0;
+}
+.valueitem p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14.2px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(71, 84, 103, 1);
+}
+
+/* testimonial-section  */
+
+.testimonial-section {
+  margin: 50px 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* left side */
+.testimonial-left {
+  width: 40%;
+}
+
+.quote-icon {
+  margin-bottom: 20px;
+}
+
+.testimonial-left h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: rgba(28, 28, 28, 1);
+}
+
+.testimonial-left p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  width: 80%;
+  color: rgba(28, 28, 28, 1);
+}
+
+/* right side */
+.testimonial-right {
+  flex: 1;
+  width: 50%;
+}
+
+.card {
+  background: rgba(60, 171, 144, 0.06);
+  border-radius: 16px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background: rgba(107, 107, 107, 1);
+}
+
+.card-header h5 {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(60, 171, 144, 1);
+}
+
+.card-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  width: 80%;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  color: rgba(16, 24, 40, 1);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-info strong {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: rgba(28, 28, 28, 1);
+}
+
+.user-info span {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: rgba(28, 28, 28, 1);
+}
+
+.arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.arrow-btn:hover {
+  background-color: #d1fae5; /* لون خفيف لما تمرر */
+}
+/* footer */
+
+.footer {
+  background-color: #273345;
+  color: white;
+  padding: 40px 60px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder {
+  width: 150px;
+  height: 55px;
+  background-color: #d9e4ef;
+  margin: 20px 0;
+}
+.logo-placeholder img {
+  width: 100%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  width: 30%;
+}
+
+.footer-right p {
+  margin-bottom: 10px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.subscribe-form {
+  display: flex;
+  border: 1px solid #606d80;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.subscribe-form input::placeholder {
+  color: #adb5bd;
+}
+
+.subscribe-form button {
+  background: rgba(255, 187, 28, 1);
+  border: none;
+  padding: 10px 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+}
+
+.footer-divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #606d80;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: #adb5bd;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #adb5bd;
+}
+
+/* media querie for responsive dision */
+
+/* Desktops & Laptops (1200px - 1440px) */
+@media (max-width: 1440px) {
+  .tree-text {
+    top: 98px;
+  }
+  .f-use h5 {
+    font-size: 18px;
+  }
+  .container {
+    padding: 0 70px;
+  }
+  .testimonial-left h2 {
+    font-size: 46px;
+  }
+  .testimonial-left p {
+    font-size: 17px;
+  }
+}
+/* Tablets (768px - 1200px) */
+@media (max-width: 1200px) {
+  .logo {
+    width: 135px;
+  }
+  .nav-links ul li a {
+    font-size: 12px;
+  }
+  .phone-num label {
+    font-size: 13px;
+  }
+  .phone-num p {
+    font-size: 14px;
+  }
+  .hero-num {
+    width: 60%;
+  }
+  .hero-text h1 {
+    font-size: 45px;
+  }
+  .hero-text p {
+    font-size: 16px;
+  }
+  .btn-box .btn {
+    padding: 12px 32px;
+  }
+  .about-text h2 {
+    font-size: 23px;
+  }
+  .about-text p {
+    font-size: 13px;
+  }
+  .custom-ol li {
+    font-size: 13px;
+  }
+  .custom-ol li::before {
+    font-size: 15px;
+  }
+  .about-img {
+    width: 47%;
+  }
+  .perant-photo {
+    width: 100%;
+  }
+  .child-photo {
+    width: 60%;
+    left: -48px;
+    bottom: 35px;
+  }
+  .tree-box {
+    height: 60vh;
+  }
+  .tree-text h3 {
+    font-size: 22px;
+  }
+  .tree-text p {
+    font-size: 13px;
+  }
+  .tree-btn {
+    padding: 8px 26px;
+  }
+  .solar-grid {
+    width: 90%;
+  }
+  .solar-text h3 {
+    font-size: 35px;
+  }
+  .solar-text p {
+    font-size: 13px;
+  }
+  .solar-card h5 {
+    font-size: 16px;
+  }
+  .solar-card p {
+    font-size: 13px;
+  }
+  .solar-card .solar-link {
+    font-size: 12px;
+  }
+  .repair-text h4 {
+    font-size: 30px;
+  }
+  .repair-text p {
+    font-size: 15px;
+  }
+  .icon-light {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  .uses-text h4 {
+    font-size: 32px;
+  }
+  .uses-text p {
+    font-size: 15px;
+  }
+  .f-use h5 {
+    font-size: 12px;
+    padding: 0;
+  }
+  .f-use p {
+    font-size: 12px;
+  }
+  .f-use .uses-link {
+    font-size: 13px;
+  }
+  .f-use i {
+    font-size: 13px;
+  }
+  .title h2 {
+    font-size: 35px;
+  }
+  .title p {
+    font-size: 16px;
+  }
+  .valueitem img {
+    width: 47%;
+  }
+  .valueitem h5 {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .valueitem p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .quote-icon {
+    width: 45px;
+  }
+  .testimonial-left h2 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .testimonial-left p {
+    font-size: 14px;
+  }
+  .card-text {
+    font-size: 17px;
+  }
+  .user-info strong {
+    font-size: 14px;
+  }
+  .user-info span {
+    font-size: 11px;
+  }
+  .arrow-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .logo-placeholder {
+    width: 126px;
+    height: 46px;
+  }
+  .footer-nav a {
+    font-size: 12px;
+  }
+  .footer-right {
+    width: 32%;
+  }
+  .footer-right p {
+    font-size: 8px;
+  }
+  .subscribe-form input {
+    font-size: 9px;
+    padding: 8px 5px;
+  }
+  .subscribe-form button {
+    padding: 8px 8px;
+  }
+}
+
+/* Large Phones (480px - 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .hero-text {
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+
+  .btn-box .btn {
+    width: 240px;
+    padding: 14px 35px;
+    font-size: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+  }
+
+  /* About Section */
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .about-text {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 25px;
+  }
+
+  .about-img {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .about-img .parent-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-img .child-photo {
+    width: 50%;
+    left: -25px;
+    bottom: -25px;
+  }
+
+  .custom-ol {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .custom-ol li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  /* Navigation */
+  .nav-items {
+    flex-direction: column;
+    padding: 12px 20px;
+    gap: 12px;
+    position: relative;
+  }
+
+  .logo {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 12px 0;
+  }
+
+  .nav-links ul li a {
+    padding: 8px 16px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .phone-num {
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  /* Hero Section */
+  .hero-num {
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .about-box {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+  }
+
+  .about-text,
+  .about-img {
+    width: 85%;
+    margin: 20px 0;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .solar-grid {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    gap: 25px;
+  }
+
+  .solar-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .uses-box {
+    padding: 40px;
+    gap: 30px;
+    display: block;
+  }
+
+  .icon-light {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .uses-text {
+    width: 100%;
+    text-align: center;
+  }
+  .uses-ex {
+    width: 100%;
+  }
+  .uses-text h4 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .uses-text p {
+    font-size: 15px;
+  }
+
+  .duo-use {
+    gap: 20px;
+  }
+
+  .duo-use .f-use {
+    padding: 20px;
+  }
+
+  .f-use h5 {
+    font-size: 11px;
+    margin-bottom: 8px;
+    line-height: 22px;
+  }
+
+  .f-use p {
+    font-size: 10px;
+  }
+
+  .f-use .uses-link {
+    font-size: 13px;
+  }
+
+  .title p {
+    font-size: 12px;
+  }
+  .title h2 {
+    font-size: 30px;
+  }
+  .valueItems {
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    gap: 20px;
+  }
+
+  .valueitem {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    height: auto;
+  }
+  .valueitem img {
+    width: 20%;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .testimonial-left,
+  .testimonial-right {
+    width: 85%;
+    margin: 0;
+  }
+
+  .testimonial-left h2 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+
+  .testimonial-left p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 30px 20px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-right {
+    width: 85%;
+    text-align: center;
+  }
+
+  .subscribe-form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .tree-box {
+    background-position: 60% center;
+  }
+
+  .tree-text {
+    top: 100px;
+    left: 25px;
+    width: 45%;
+  }
+
+  .tree-text h3 {
+    font-size: 20px;
+  }
+
+  .tree-text p {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+
+  .tree-btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  .repair-box {
+    height: 450px;
+  }
+
+  .repair-text {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .repair-text h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .repair-text p {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+}
+
+/* Small Phones (Below 480px) */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 0 10px;
+  }
+
+  .btn-box {
+    margin-top: 25px;
+  }
+
+  .btn-box .btn {
+    width: 220px;
+    padding: 12px 30px;
+    font-size: 15px;
+  }
+
+  /* About Section */
+  .about-box {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .about-text {
+    width: 95%;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .about-img {
+    width: 95%;
+  }
+
+  .about-img .child-photo {
+    width: 45%;
+    left: -20px;
+    bottom: -20px;
+  }
+
+  /* Navigation */
+  .nav-items {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .nav-links ul li a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .phone-num label {
+    font-size: 12px;
+  }
+
+  .phone-num p {
+    font-size: 14px;
+  }
+
+  /* Hero Section */
+  .hero-num {
+    width: 95%;
+    margin: 30px auto;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .about-text h2 {
+    font-size: 24px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .custom-ol li {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+
+  .tree-box {
+    background-position: 65% center;
+  }
+
+  .tree-text {
+    top: 80px;
+    left: 15px;
+    width: 50%;
+  }
+
+  .tree-text h3 {
+    font-size: 24px;
+  }
+
+  .tree-text p {
+    font-size: 14px;
+  }
+
+  .tree-btn {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
+
+  .solar-text h3 {
+    font-size: 22px;
+  }
+
+  .solar-text p {
+    font-size: 14px;
+  }
+
+  .repair-box {
+    height: 400px;
+  }
+
+  .repair-text {
+    width: 85%;
+    padding: 25px;
+  }
+
+  .repair-text h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .repair-text p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .uses-box {
+    padding: 30px;
+    gap: 25px;
+  }
+
+  .icon-light {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 15px;
+  }
+
+  .uses-text h4 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .uses-text p {
+    font-size: 14px;
+  }
+
+  .duo-use {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .duo-use .f-use {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .f-use h5 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .f-use p {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .f-use .uses-link {
+    font-size: 12px;
+  }
+
+  .title h2 {
+    font-size: 22px;
+  }
+
+  .title p {
+    font-size: 14px;
+  }
+
+  .testimonial-left h2 {
+    font-size: 24px;
+  }
+
+  .testimonial-left p {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .user-info strong {
+    font-size: 14px;
+  }
+
+  .user-info span {
+    font-size: 12px;
+  }
+
+  .subscribe-form {
+    max-width: 250px;
+  }
+
+  .subscribe-form input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .subscribe-form button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+}
